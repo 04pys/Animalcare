@@ -22,6 +22,15 @@ import io.perfmark.Tag;
 
 public class Upload extends AppCompatActivity {
 
+
+    //스토리지 보안설정
+    //service firebase.storage {
+    //  match /b/{bucket}/o {
+    //    match /{allPaths=**} {
+    //      allow read, write: if request.auth != null;
+    //    }
+    //  }
+    //}
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     private static final String TAG = "Upload";
     @Override
